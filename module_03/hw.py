@@ -151,5 +151,6 @@ es_engine = ESEngine(es_client)
 es_results = es_engine.search(user_question, 5)
 print(es_results[0]['id'])
 
+# Q6 Hit-rate for Elasticsearch
 es_res = evaluate(ground_truth, search_engine)
 print(es_res['hit_rate'])
